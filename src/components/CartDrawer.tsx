@@ -21,7 +21,7 @@ export default function CartDrawer({ isOpen, onClose }: { isOpen: boolean; onClo
 
   if (!isClient) return null;
 
-  const total = items.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  const total = items.reduce((acc, item) => acc + Number(item.price) * item.quantity, 0);
 
   const handleCheckout = (e: React.FormEvent) => {
     e.preventDefault();
@@ -86,7 +86,7 @@ export default function CartDrawer({ isOpen, onClose }: { isOpen: boolean; onClo
                                 <span className={item.isVeg ? "text-green-500 mr-1 text-xs" : "text-red-500 mr-1 text-xs"}>●</span>
                                 {item.name}
                             </h4>
-                            <span className="font-medium text-gold">₹{item.price * item.quantity}</span>
+                            <span className="font-medium text-gold">₹{Number(item.price) * item.quantity}</span>
                           </div>
                           
                           <div className="flex items-center justify-between mt-3">
