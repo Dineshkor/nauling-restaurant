@@ -37,7 +37,6 @@ export default function FeaturedCategories() {
               </div>
               <div className="p-5">
                 <h3 className="font-serif text-sm font-bold text-text-primary uppercase tracking-wider mb-2">{dish.name}</h3>
-                <p className="text-text-muted text-xs mb-3 line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div className="stars text-xs mb-3">★★★★★</div>
                 <div className="flex items-center justify-between">
                   <span className="text-gold font-bold font-serif text-lg">{dish.price}</span>
