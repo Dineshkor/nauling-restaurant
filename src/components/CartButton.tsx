@@ -1,10 +1,18 @@
 "use client";
+import { useState, useEffect } from 'react';
 import { useCartStore } from '@/lib/cartStore';
 import { ShoppingBag } from 'lucide-react';
 
 export default function CartButton({ onClick }: { onClick: () => void }) {
+  const [isClient, setIsClient] = useState(false);
   const items = useCartStore(s => s.items);
   const totalItems = items.reduce((acc, item) => acc + item.quantity, 0);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
 
   return (
     <button
