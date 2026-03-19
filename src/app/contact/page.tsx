@@ -20,7 +20,7 @@ export default function ContactPage() {
             <div>
               <h2 className="font-serif text-2xl font-bold text-gold mb-6">Contact Information</h2>
               <div className="space-y-4 text-base text-text-secondary">
-                <p><strong className="text-text-primary">📍 Address:</strong><br/>12 MG Road, Pune [TODO]</p>
+                <p><strong className="text-text-primary">📍 Address:</strong><br/>12 MG Road, Pune</p>
                 <p><strong className="text-text-primary">📞 Phone / WhatsApp:</strong><br/><a href="tel:+919970451515" className="hover:text-gold transition">+91 99704 51515</a></p>
                 <p><strong className="text-text-primary">✉️ Email:</strong><br/>hello@naulingrestaurant.com</p>
               </div>
@@ -35,7 +35,7 @@ export default function ContactPage() {
                       <tr key={day} className="flex justify-between">
                         <td className={`py-3 font-medium ${['Saturday','Sunday'].includes(day) ? 'text-gold' : 'text-text-primary'}`}>{day}</td>
                         <td className={`py-3 ${['Saturday','Sunday'].includes(day) ? 'text-gold' : 'text-text-muted'}`}>
-                          {['Friday','Saturday','Sunday'].includes(day) ? '11:00 AM - 11:30 PM' : '11:00 AM - 11:00 PM'}
+                          {['Friday','Saturday','Sunday'].includes(day) ? '9:00 AM - 11:30 PM' : '9:00 AM - 11:00 PM'}
                         </td>
                       </tr>
                     ))}
