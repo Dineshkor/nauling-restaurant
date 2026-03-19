@@ -40,7 +40,7 @@ export default function CategoryFilter({ categories }: { categories: MenuCategor
     <div className="sticky top-[72px] z-30 w-full bg-dark/95 backdrop-blur-lg border-b border-dark-border py-3">
       <div 
         ref={scrollRef}
-        className="max-w-6xl mx-auto px-6 overflow-x-auto whitespace-nowrap scrollbar-hide flex gap-2"
+        className="max-w-full sm:max-w-6xl mx-auto px-6 overflow-x-auto whitespace-nowrap scrollbar-hide flex gap-2 items-center"
       >
         {categories.map(cat => (
           <button
