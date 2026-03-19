@@ -9,7 +9,7 @@ export default function CartButton({ onClick }: { onClick: () => void }) {
   return (
     <button
       onClick={onClick}
-      className="fixed bottom-20 right-4 md:bottom-6 md:right-6 z-[100] bg-gold text-dark rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shadow-xl shadow-gold/30 hover:bg-gold-light hover:scale-105 transition-all group"
+      className="fixed bottom-6 right-4 md:right-6 z-[100] bg-gold text-dark rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shadow-xl shadow-gold/30 hover:bg-gold-light hover:scale-105 transition-all group"
     >
       <ShoppingBag size={24} className="group-hover:scale-110 transition-transform" />
       {totalItems > 0 && (
