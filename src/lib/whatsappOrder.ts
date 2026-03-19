@@ -30,7 +30,7 @@ export const generateWhatsAppLink = (details: OrderDetails): string => {
   
   message += `\n*Items Ordered:*\n`;
   details.items.forEach((item, index) => {
-    message += `${index + 1}. ${item.name} x${item.quantity} — ₹${item.price * item.quantity}\n`;
+    message += `${index + 1}. ${item.name} x${item.quantity} — ₹${Number(item.price) * item.quantity}\n`;
   });
   
   message += `\n💰 *Total: ₹${details.total}*\n`;
