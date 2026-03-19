@@ -118,7 +118,7 @@ export default function CartDrawer({ isOpen, onClose }: { isOpen: boolean; onClo
                       {orderType === 'delivery' && (
                         <div>
                           <label className="block text-sm font-medium mb-1 text-text-muted">Delivery Address *</label>
-                          <textarea required value={address} onChange={e => setAddress(e.target.value)} rows={3} className="w-full border border-dark-border bg-dark-surface rounded-lg p-3 text-sm text-text-primary focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition placeholder:text-text-muted" placeholder="Apt 4B, MG Road..."></textarea>
+                          <textarea required value={address} onChange={e => setAddress(e.target.value)} rows={3} className="w-full border border-dark-border bg-dark-surface rounded-lg p-3 text-sm text-text-primary focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition placeholder:text-text-muted" placeholder="e.g. Near Sant Tukaram Metro..."></textarea>
                         </div>
                       )}
                       <div>
