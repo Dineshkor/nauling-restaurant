@@ -21,7 +21,7 @@ export default function CartDrawer({ isOpen, onClose }: { isOpen: boolean; onClo
 
   if (!isClient) return null;
 
-  const total = getTotal();
+  const total = items.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   const handleCheckout = (e: React.FormEvent) => {
     e.preventDefault();
