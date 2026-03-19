@@ -48,12 +48,12 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Nav */}
-        <div className="md:hidden flex gap-1 items-center">
+        <div className="md:hidden flex gap-0.5 items-center">
           {links.map(link => (
             <Link 
               key={link.href}
               href={link.href} 
-              className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all ${
+              className={`px-2.5 py-1.5 rounded-md text-[11px] font-medium transition-all ${
                 pathname === link.href 
                   ? 'text-gold' 
                   : 'text-text-muted hover:text-text-primary'

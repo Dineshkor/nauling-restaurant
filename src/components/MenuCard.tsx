@@ -14,13 +14,13 @@ export default function MenuCard({ item }: { item: MenuItem }) {
   // Compact list-style for items without images
   if (!item.image) {
     return (
-      <div className="luxury-card rounded-xl px-5 py-4 flex items-center justify-between gap-4">
+      <div className="luxury-card rounded-xl px-4 py-3 sm:px-5 sm:py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
         <div className="flex items-center gap-3 flex-1 min-w-0">
           <span className={`flex-shrink-0 w-4 h-4 rounded-sm border-2 flex items-center justify-center ${item.isVeg ? 'border-green-500' : 'border-red-500'}`}>
             <span className={`w-2 h-2 rounded-full ${item.isVeg ? 'bg-green-500' : 'bg-red-500'}`}></span>
           </span>
           <div className="min-w-0">
-            <h4 className="font-medium text-text-primary text-sm leading-tight truncate">
+            <h4 className="font-medium text-text-primary text-sm leading-tight">
               {item.name}
               {item.isSpicy && <span className="ml-1.5 text-xs">🌶️</span>}
             </h4>
