@@ -21,7 +21,7 @@ export default function ContactPage() {
               <h2 className="font-serif text-2xl font-bold text-gold mb-6">Contact Information</h2>
               <div className="space-y-4 text-base text-text-secondary">
                 <p><strong className="text-text-primary">📍 Address:</strong><br/>Sant Tukaram Nagar,<br/>Near YCM & D Y Hospital,<br/>Pimpri, Pune - 411018</p>
-                <p><strong className="text-text-primary">📞 Phone / WhatsApp:</strong><br/><a href="tel:+919970451515" className="hover:text-gold transition">+91 99704 51515</a></p>
+                <p><strong className="text-text-primary">📞 Phone / WhatsApp:</strong><br/><a href="tel:+919970451515" className="hover:text-gold transition">+91 99704 51515</a><br/><a href="tel:+917500521331" className="hover:text-gold transition">+91 75005 21331</a></p>
                 <p><strong className="text-text-primary">✉️ Email:</strong><br/>hello@naulingrestaurant.com</p>
               </div>
             </div>

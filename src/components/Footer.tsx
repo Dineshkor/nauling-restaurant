@@ -34,7 +34,7 @@ export default function Footer() {
             <h4 className="font-serif text-lg mb-5 text-gold font-semibold">Visit Us</h4>
             <div className="text-text-muted text-sm space-y-3">
               <p>Sant Tukaram Nagar, <br />Near YCM & D Y Hospital, <br />Pimpri, Pune - 411018</p>
-              <p><strong className="text-text-secondary">Phone / WhatsApp:</strong> <a href="tel:+919970451515" className="hover:text-gold transition">+91 99704 51515</a></p>
+              <p><strong className="text-text-secondary">Phone / WhatsApp:</strong><br /><a href="tel:+919970451515" className="hover:text-gold transition">+91 99704 51515</a><br /><a href="tel:+917500521331" className="hover:text-gold transition">+91 75005 21331</a></p>
               <p><strong className="text-text-secondary">Hours:</strong> Mon-Sun | 9 AM - 11 PM</p>
             </div>
           </div>
